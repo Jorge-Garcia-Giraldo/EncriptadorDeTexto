@@ -22,6 +22,8 @@ function encriptar() {
         parrafo.textContent = "Ingresa el texto que deseas encriptar o desencriptar";
         alert("Debes ingresar algún texto");
     }
+    document.getElementById("copiar").style.display = "show";
+    document.getElementById("copiar").style.display = "inherit";
 }
 
 function desencriptar () {
@@ -48,4 +50,10 @@ function desencriptar () {
         parrafo.textContent = "Ingresa el texto que deseas encriptar o desencriptar";
         alert("Debes ingresar algún texto");
     }
+
+}
+function copiar() {
+    var contenido = document.querySelector("#texto")
+    contenido.select ();
+    document.execCommand("copy");
 }

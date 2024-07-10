@@ -100,11 +100,30 @@
     text-align: center;
     color: #0a3871;
 }
+.copiar{
+    display: none;
+    padding: 4%;
+    width: 40%;
+    background: #d8dfe8;
+    border: 1px solid #0a3871;
+    border-radius: 24px;
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 16px;
+    text-align: center;
+    color: #0a3871;
+}
 .btn-desencriptar:hover,
 .btn-encriptar:hover {
     margin: 0.3%;
     width: 24.5%;
     padding: 1.8%;
+}
+.copiar:hover {
+    margin: 0.3%;
+    width: 39%;
+    padding: 3.5%;
 }
 .encriptado{
     display: flex;
@@ -159,7 +178,13 @@
     height: 50%;
     top: 15%;
 }
-
+.pie {
+    font-family: "Inter";
+    position: absolute;
+    width: 80%;
+    left: 12%;
+    top: 100%;
+}
 /*Responsive desing*/
 @media  (max-width: 57.5em){
     .contariner{
@@ -214,5 +239,13 @@
         top: 0;
         display: none;
         visibility: hidden;
+    }
+    .pie {
+        font-family: "Inter";
+        position: absolute;
+        width: 80%;
+        left: 12%;
+        top: 110%;
+        font-size: 12px
     }
 }

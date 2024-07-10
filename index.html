@@ -24,7 +24,7 @@
         <div>
             <div class="botones">
                 <button class="btn-encriptar" type="button" onclick="encriptar()">
-                Enciptar
+                Encriptar
                 </button>
                 <input 
                     type="button" 
@@ -33,15 +33,19 @@
                     onclick="desencriptar()">
             </div>
         </div>
-    </div>  
+    </div>
     <div class="encriptado">
         <img src="img/dibujo.png" alt="" id="dibujo">
         <div class="mensaje-encriptado" id="mensaje-encriptado">
             <h2 id="titulo-mensaje">Ningún mensaje fue encontrado</h2>
             <p id="parrafo">Ingresa el texto que deseas encriptar o desencriptar</p>
+            <button class="copiar" id ="copiar" type="button" onclick="copiar()"> Copiar </button>
             <!-- <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="mensaje"></textarea-> -->
         </div>
     </div>
 </body>
+<footer>
+    <div class= "pie" id="pie"> &copy; copyright 2024 - Encriptador de Texto - Desarrollado por Jorge García </div>
+</footer>
 <script src="index.js"></script>
 </html>
